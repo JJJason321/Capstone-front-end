@@ -30,6 +30,8 @@ export const FormWrap = styled.div`
     }
 `;
 
+
+
 export const Icon = styled(Link)`
     margin-left: 32px;
     margin-top: 32px;
@@ -55,6 +57,14 @@ export const FormContent = styled.div`
         padding: 10px;
     }
 `;
+
+export const FormUnite = styled.div`
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: Left;
+    align-items: stretch;
+`   
 
 export const Form = styled.form`
     background: #010101;
@@ -94,6 +104,7 @@ export const FormInput = styled.input`
     margin-bottom: 32px;
     border: none;
     border-radius: 4px;
+    
 `;
 
 export const FormButton =styled.button`

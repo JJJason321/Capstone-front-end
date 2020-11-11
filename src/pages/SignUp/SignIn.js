@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { icons } from 'react-icons/lib'
 import {
     Container,
@@ -14,44 +14,97 @@ import {
     FormButtonLink,
     NavIcon
 } from './signin.element'
-import checkLogin from '../../libs/CheckLogin'
 import axios from 'axios'
+import { useAccountContext, useLoginContext } from '../../libs/ContextLib';
+import { useHistory } from 'react-router-dom';
+import { computeHeadingLevel } from '@testing-library/react';
+
 
 const SignIn = () => {
 
     const [btncolor, setbtncolor] = useState(true)
-    const [logged , setlogged] = useState(false)
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
-    const [accounts, setAccounts] = useState()
+    const [email, setEmail] = useState()
+    const [password, setPassword] = useState()
+    //const [accounts, setAccounts] = useState()
 
-    async function handleSubmit(event){
-        console.log(email)
-        console.log(password)  
-        console.log('this is from handleSubmit')
+
+    const { login, setLogin } = useLoginContext();
+    const { AuthenticatedAccount, setAuthenticatedAccount } = useAccountContext()
+
+    const history = useHistory();
+    //console.log(login);
+    //console.log(AuthenticatedAccount);
+
+    useEffect(() => {
+        if (login) {
+            //console.log('you can see this only if login = true')
+            //console.log(AuthenticatedAccount);
+        }
+    }, [])
+
+
+
+    async function handleSubmit(event) {
+        event.preventDefault();
 
         axios.post('http://localhost:8080/api/signIn',
-        {
-            "username" : email,
-            "password" : password
-        }).then(
-            res =>{
-                console.log('axios executed')
-                console.log(res.data);
-                setAccounts(res.data)
-                setlogged(true)
-                alert("welcome !")
+            {
+                "username": email,
+                "password": password
+            }).then(response => {
+                // console.log(response.data);
+                const data = response.data;
+                //console.log(data);
+                setAuthenticatedAccount(data);
+                //console.log(AuthenticatedAccount);
+                alert('Successful login');
+                /*
+                setLogin(true);
+                console.log(response.data);
+                localStorage.setItem('user', response.data);
+                console.log(response.data.id);
+                localStorage.setItem('userId', response.data.id);
+                console.log(response.data.client);
+                localStorage.setItem('isClient', response.data.client);
+                console.log(response.data.id);
+                localStorage.setItem('userId', response.data.id);
+                */
+                setLocalStorage(response)
+                backToHome()
+
             }
-        ).catch(
-            e=>{
-                console.log(e.code)
-                alert("Incorrect password")
-            }
-        );
+            ).catch((error) => {
+                alert('Invalid Email or Password')
+            });
+
+
+    }
+    function setLocalStorage(response) {
+        setLogin(true);
+        console.log(response.data);
+        console.log(response.data.id);
+        console.log(response.data.client);
+        console.log(response.data.employee);
+        console.log(response.data.admin);
+        localStorage.setItem('user', response.data);
+        localStorage.setItem('userId', response.data.id);
+        localStorage.setItem('isClient', response.data.client);       
+        localStorage.setItem('isEmployee', response.data.employee);     
+        localStorage.setItem('isAdmin', response.data.admin);
     }
 
-    console.log("after axios")
-    console.log(accounts)
+
+
+    function backToHome() {
+        /*
+        console.log("globale context account: " + accounts)
+        console.log("account id:   " + AuthenticatedAccount)
+        console.log('back to home')
+        */
+        //console.log("globale context account: " + AuthenticatedAccount)
+        localStorage.setItem('login', true)
+        history.push("/");
+    }
 
     return (
         <>
@@ -62,16 +115,16 @@ const SignIn = () => {
                         Ultra
                     </Icon>
                     <FormContent>
-                        <Form onSubmit={handleSubmit}>
+                        <Form onSubmit={handleSubmit} >
                             <FormH1>Sign in to your account</FormH1>
                             <FormLabel htmlFor='for'>Email</FormLabel>
-                            <FormInput type='email' required 
-                                onChange={e=> setEmail(e.target.value)} 
+                            <FormInput type='email' required
+                                onChange={e => setEmail(e.target.value)}
                                 autoFocus
                             />
                             <FormLabel htmlFor='for'>Password</FormLabel>
-                            <FormInput type='password' required 
-                                onChange={e=> setPassword(e.target.value)}
+                            <FormInput type='password' required
+                                onChange={e => setPassword(e.target.value)}
                             />
                             <FormButton type='submit' btncolor={true}>Sign in</FormButton>
                             <Text>Forgot password?</Text>
