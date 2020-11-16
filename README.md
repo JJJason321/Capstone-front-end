@@ -2,6 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Adds-on Installation List:
+
+1. styled component 
+	npm install --save styled-components
+
+2. axios
+	npm install axios
+
+3. react-router-dom
+	npm install --save react-router
+
+4. react-icons
+	npm install react-icons --save
+
+5. material-ui
+	npm install @material-ui/core
+
+6. react-bootstrap
+	npm install react-bootstrap bootstrap
+
 ## Available Scripts
 
 In the project directory, you can run:
