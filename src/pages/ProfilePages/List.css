@@ -1,0 +1,37 @@
+.tableContainer {
+    background-color:rgba(63, 191, 191, 0.25);
+    padding: 8px;
+    
+    text-align: center;
+    background: linear-gradient(
+    108deg,
+    rgba(153,204,255,1) 0%,
+    rgba(10,201,122,1) 100%
+);
+}
+
+
+.tableView{
+    width: 100%;
+    
+}
+
+tr{
+    height: 35px;
+    
+}
+
+th{
+    border: 1px black solid;
+    justify-content: left;
+}
+
+td{
+    border-bottom: 1px black solid;
+    align-items: flex-start;
+    
+}
+
+.buttonSection {
+    
+}

@@ -11,7 +11,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
+top:2;
 `;
 
 export const FooterSubscription = styled.section`

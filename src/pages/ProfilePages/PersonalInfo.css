@@ -1,0 +1,12 @@
+.formContainer {
+    width: 100%;
+    
+    background-color: rgba(63, 191, 191, 0.25);
+    padding: 8px;
+    background: linear-gradient(
+    108deg,
+    rgba(153,204,255,1) 0%,
+    rgba(10,201,122,1) 100%
+);
+}
+

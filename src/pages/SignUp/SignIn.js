@@ -79,21 +79,20 @@ const SignIn = () => {
 
 
     }
+    
     function setLocalStorage(response) {
         setLogin(true);
-        console.log(response.data);
-        console.log(response.data.id);
-        console.log(response.data.client);
-        console.log(response.data.employee);
-        console.log(response.data.admin);
+        //console.log(response.data);
+        //console.log(response.data.id);
+        //console.log(response.data.client);
+        //console.log(response.data.employee);
+        //console.log(response.data.admin);
         localStorage.setItem('user', response.data);
         localStorage.setItem('userId', response.data.id);
         localStorage.setItem('isClient', response.data.client);       
         localStorage.setItem('isEmployee', response.data.employee);     
         localStorage.setItem('isAdmin', response.data.admin);
     }
-
-
 
     function backToHome() {
         /*
