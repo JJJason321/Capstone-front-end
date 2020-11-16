@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Adds-on Installation List:
+Adds-on Installation List: #You will need to install following add-ons to run the project successfully
 
 1. styled component -
 	npm install --save styled-components
