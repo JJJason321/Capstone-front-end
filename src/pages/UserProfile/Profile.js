@@ -13,6 +13,9 @@ import Sidebar from '../../components/Sidebar/Sidebar';
 import './Profile.css';
 import List from '../ProfilePages/List';
 import axios from 'axios';
+import ManageAccount from '../ProfilePages/ManageAccount';
+import SetCalender from '../ProfilePages/SetCalender';
+import BusinessReports from '../ProfilePages/BusinessReports';
 
 const Profile = () => {
 
@@ -98,6 +101,9 @@ const Profile = () => {
                   <Route path='/profile' exact component={List} />
                   <Route path='/profile/appointment' exact component={Appointment} />
                   <Route path='/profile/personalinfo' exact component={PersonalInfo} />
+                  <Route path='/profile/manageaccount' exact component={ManageAccount} />
+                  <Route path='/profile/setcalender' exact component={SetCalender} />
+                  <Route path='/profile/generatereport' exact component={BusinessReports} />
                 </Switch>
               </div>
             </div>

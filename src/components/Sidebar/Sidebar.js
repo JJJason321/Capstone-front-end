@@ -103,12 +103,21 @@ const Sidebar = () => {
 
 
                         {(admin === 'true') ?
+                            <>
                             <NavItem>
                                 <NavLinks to='/profile/generatereport'>
                                     <HiIcons.HiOutlineDocumentReport />Business Report
 
                             </NavLinks>
                             </NavItem>
+
+                            <NavItem>
+                                <NavLinks to='/profile/manageaccount'>
+                                    <BsIcons.BsPersonPlus /> Manage Accounts
+
+                            </NavLinks>
+                            </NavItem>
+                            </>
                             :
                             1
                         }

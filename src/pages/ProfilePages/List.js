@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import Table from 'react-bootstrap/Table'
 import './List.css';
-import { Button } from '../../globalStyles';
+import { Button3 } from './formelement';
 
 
 const List = () => {
@@ -29,10 +29,9 @@ const List = () => {
                 <td>{appointment.date}</td>
                 <td>{appointment.startTime}</td>
                 <td>{appointment.endTime}</td>
-                <td>
-                    <Button>check</Button>
-                    <Button>Delete</Button>
-                    <Button>View Invoice</Button>
+                <td className="buttonClass">
+                    <Button3 btncolor={true}>Details</Button3>
+                    <Button3>Invoice</Button3>
                 </td>
             </tr>
             )

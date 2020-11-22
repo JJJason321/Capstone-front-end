@@ -30,8 +30,7 @@ td{
     border-bottom: 1px black solid;
     align-items: flex-start;
     
-}
-
-.buttonSection {
+    flex-direction: row;
     
 }
+

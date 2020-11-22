@@ -12,10 +12,12 @@ import { Container,
     FormButton,
     Text,
     FormButtonLink,
-    NavIcon   } from './formelement';
+    NavIcon,   
+    Button2} from './formelement';
 
 import './PersonalInfo.css'
-import { BiEdit } from 'react-icons/bi';
+
+import * as AiIcons from 'react-icons/ai';
 
 const PersonalInfo = () => {
 
@@ -132,7 +134,7 @@ const PersonalInfo = () => {
             <div className='formContainer'>
                 <FormWrap>
                     <FormContent>
-                        <Form onSubmit={handleSubmit} className='form'>
+                        <Form onSubmit={handleSubmit} className='form' disabled={!formStatus}>
                             <FormH1>Modify your infomation</FormH1>
                             <FormLabel>First Name</FormLabel>
                             <FormInput type='text' required placeholder={info.firstName} 
@@ -150,9 +152,14 @@ const PersonalInfo = () => {
                                 Update my infomation
                             </FormButton>
                         </Form>
-                        <FormButton btncolor={true} onClick={editForm}>
-                            Edit my infomation
-                        </FormButton>
+                        <Button2 btncolor={!formStatus} onClick={editForm} small={true}>
+                            {!formStatus ? 
+                            <><AiIcons.AiFillUnlock /></> 
+                            : 
+                            <><AiIcons.AiFillLock /></> 
+                            }
+                            
+                        </Button2>
                     </FormContent>
                 </FormWrap>
 
