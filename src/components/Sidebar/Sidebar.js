@@ -52,7 +52,7 @@ const Sidebar = () => {
     })
 
     const logout = () => {
-        console.log("Button Clicked - Turn Login status Off")
+        //console.log("Button Clicked - Turn Login status Off")
         loginContext.setLogin(false);
         localStorage.clear();
         //history.push("/")
