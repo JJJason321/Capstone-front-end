@@ -36,9 +36,9 @@ function App() {
       */
       setLogin(true);
     } else {
-      console.log(loginStatus);
+      //console.log(loginStatus);
     }
-  }, [])
+  })
 
 
   return (

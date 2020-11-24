@@ -40,7 +40,7 @@ const SignIn = () => {
             //console.log('you can see this only if login = true')
             //console.log(AuthenticatedAccount);
         }
-    }, [])
+    })
 
 
 

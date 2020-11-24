@@ -1,7 +1,7 @@
 
-import transitions from '@material-ui/core/styles/transitions';
+
 import axios from 'axios';
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import {
     Container2,
@@ -182,6 +182,7 @@ const ManageAccount = () => {
     return (
 
         <>
+        You can manage all accounts here
             <Container2>
                 <Button2 btncolor={true} small={true} onClick={addNewAccount}>
                     {page ? 'Add New' : 'Go Back'}

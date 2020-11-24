@@ -50,7 +50,7 @@ const Profile = () => {
       //console.log(account)
     }
    
-  },[])
+  })
 
 
   function loadAccount(){

@@ -296,13 +296,12 @@ const SetCalender = () => {
 
     return (
         <div>
-            This is set SetCalender
-            <Container2>
-                You would set your working calender here
+            You can set your work calender here!
+            <Container2>               
                 <FormWrap>
-                    This is form FormWrap
+                    
                     <FormContent>
-                        here is form
+                      
                         <Form2 onSubmit={handleSubmit}>
                             <FormH1>
                                 Set your working schedule for next 3 months.

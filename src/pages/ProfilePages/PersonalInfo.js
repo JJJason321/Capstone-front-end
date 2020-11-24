@@ -1,19 +1,16 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect} from 'react';
 import axios from 'axios';
-import TextField from '@material-ui/core/TextField';
-import { Container,
+
+import { 
     FormWrap,
-    Icon,
     FormContent,
     Form,
     FormH1,
     FormLabel,
     FormInput,
-    FormButton,
-    Text,
-    FormButtonLink,
-    NavIcon,   
-    Button2} from './formelement';
+    FormButton,  
+    Button2
+} from './formelement';
 
 import './PersonalInfo.css'
 
@@ -22,8 +19,8 @@ import * as AiIcons from 'react-icons/ai';
 const PersonalInfo = () => {
 
     const [onload, setOnload] = useState(true)
-    const [onload2, setOnload2] = useState(false)
-    const [account, setAccount] = useState()
+    //const [onload2, setOnload2] = useState(false)
+    //const [account, setAccount] = useState()
     const [info, setInfo] = useState('no data right now')
     
     const [firstname, setFirstname] = useState()
@@ -36,25 +33,25 @@ const PersonalInfo = () => {
     useEffect(() => {
 
         if (onload) {
-            console.log('this is info tag at OnLoad1: ' + info)
+           // console.log('this is info tag at OnLoad1: ' + info)
             loadAccountInfo();
             //loadAccount();
-            console.log('executed 2 functions, suppose to have some data')
+          //  console.log('executed 2 functions, suppose to have some data')
             setOnload(false);
-            setOnload2(true)
+            //setOnload2(true)
         }
 
 
 
     })
 
-
+/*
     function loadAccount() {
         const userId = localStorage.getItem('userId');
         const url = 'http://localhost:8080/api/accounts/' + userId;
 
         axios.get(url).then(response => {
-            setAccount(response.data);
+           // setAccount(response.data);
             setOnload(false);
 
         }).catch(e => {
@@ -62,7 +59,7 @@ const PersonalInfo = () => {
         })
 
     }
-
+*/
     function loadAccountInfo() {
         const userId = localStorage.getItem('userId');
         //console.log(userId);
@@ -71,7 +68,7 @@ const PersonalInfo = () => {
             //console.log('i am a client')
             const url = 'http://localhost:8080/api/clientInfo/' + userId;
             axios.get(url).then(response => {
-                console.log(response.data);
+                //console.log(response.data);
                 setInfo(response.data);
             }).catch(e => {
                 console.log(e)
@@ -80,7 +77,7 @@ const PersonalInfo = () => {
             //console.log('i am employee or owner')
             const url = 'http://localhost:8080/api/employeeInfo/' + userId;
             axios.get(url).then(response => {
-                console.log(response.data);
+         //       console.log(response.data);
                 setInfo(response.data);
             }).catch(e => {
                 console.log(e)
@@ -131,7 +128,9 @@ const PersonalInfo = () => {
 
     return (
         <>
+        You can set your work calender here!
             <div className='formContainer'>
+            
                 <FormWrap>
                     <FormContent>
                         <Form onSubmit={handleSubmit} className='form' disabled={!formStatus}>

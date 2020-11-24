@@ -21,7 +21,7 @@ background: linear-gradient(
 
 export const Container2 = styled.div`
 min-height:692px;
-height:1100px;
+height:auto;
 position: relative;
 bottom: 0;
 left: 0;
@@ -41,6 +41,7 @@ export const FormWrap = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin:16px;
 
     @media screen and (max-width: 400px){
         height:80%;
@@ -119,6 +120,24 @@ export const Form2 = styled.form`
     }
 `;
 
+export const CalendarWrap = styled.div`
+    background-color:rgba(255,255,255,0.9) ;
+    
+    padding: 16px 16px;
+    margin-bottom: 32px;
+    margin-left: 8px;
+    margin-right:8px;
+    
+    border: none;
+    border-radius: 4px;
+    font-size: 24px;
+    font-style: italic;
+    width: 275px;
+    
+    align-items:center;
+
+`
+
 
 export const FormH1 = styled.h1`
     margin-bottom: 40px;
@@ -179,7 +198,7 @@ export const FormSelect = styled.select`
     border-radius: 4px;
     font-size: 20px;
     font-style: italic;
-    width: 250px;
+    width: 275px;
     
     align-items:center;
 
@@ -191,12 +210,30 @@ export const FormRow = styled.div`
     display:grid;
     align-items:center;
     justify-items:right;
-    
+
+
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 10px 10px;
     grid-template-areas:
     ". . .";
+
+   
+
+`
+
+export const FormRow2 = styled.div`
+    
+    
+    display:grid;
+    align-items:center;
+    justify-items:right;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-template-areas:
+    ". . ";
 
    
 
