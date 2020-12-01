@@ -5,6 +5,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1. Run 
 	### `npm install`
 	in yout terminal to install all dependecies.
+
+	If this does not work, run following command as well.
+	### `npm install date-fns --save`
+
+	Thank you.
 	
 
 ## Available Scripts
