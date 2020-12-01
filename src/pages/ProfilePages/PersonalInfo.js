@@ -97,12 +97,12 @@ const PersonalInfo = () => {
             "address": address,
             "phoneNumber": phonenumber
         }
-        console.log(data);
+        //console.log(data);
         if (identity ==='true'){
             const url = 'http://localhost:8080/api/updateclientinfo'
             axios.put(url,data).then(
                 response => {
-                    console.log(response.data);
+                  //  console.log(response.data);
                 }
             )
         }else{
@@ -128,7 +128,7 @@ const PersonalInfo = () => {
 
     return (
         <>
-        You can set your work calender here!
+       
             <div className='formContainer'>
             
                 <FormWrap>

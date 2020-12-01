@@ -5,7 +5,8 @@ import { InfoSection } from '../../components/';
 const Service = () => {
     return (
         <>
-          
+        <InfoSection {... homeObjTwo} />  
+          <InfoSection {... homeObjThree} />  
           <InfoSection {... homeObjFour} />  
         </>
     )

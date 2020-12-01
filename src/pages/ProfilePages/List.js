@@ -65,7 +65,6 @@ const List = () => {
 
     return (
         <div>
-            You can view all your appointment here!
             
             <div className='tableContainer'>
                 <Table striped bordered hover className='tableView'>

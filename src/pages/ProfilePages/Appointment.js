@@ -331,7 +331,7 @@ const Appointment = () => {
         const url = 'http://localhost:8080/api/createappointment'
         axios.post(url,obj)
         .then(res => {
-                console.log(res.data);
+                //console.log(res.data);
             }
         ).catch(err=>{
             console.log(err)
@@ -355,7 +355,7 @@ const Appointment = () => {
 
     return (
         <>
-            You can make an appointment here!
+        
             
             <Container2>
                 <FormWrap>

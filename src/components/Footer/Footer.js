@@ -47,9 +47,9 @@ const Footer = () => {
                     <FooterLinkItems>
                         <FooterLinkTitle>About us</FooterLinkTitle>
                         <FooterLink to='/sign-up'>How it works</FooterLink>
-                        <FooterLink to='/'>Testimonials</FooterLink>
+                        <FooterLink to='/'>Who we are</FooterLink>
                         <FooterLink to='/'>Careers</FooterLink>
-                        <FooterLink to='/'>Investors</FooterLink>
+                        <FooterLink to='/'>Join us!</FooterLink>
                         <FooterLink to='/'>Terms of Services</FooterLink>
                     </FooterLinkItems>
 
@@ -57,8 +57,8 @@ const Footer = () => {
                         <FooterLinkTitle>Contact us</FooterLinkTitle>
                         <FooterLink to='/sign-up'>How it works</FooterLink>
                         <FooterLink to='/'>Testimonials</FooterLink>
-                        <FooterLink to='/'>Careers</FooterLink>
-                        <FooterLink to='/'>Investors</FooterLink>
+                        <FooterLink to='/'>For Bussiness</FooterLink>
+                        <FooterLink to='/'>Opportunity</FooterLink>
                         <FooterLink to='/'>Terms of Services</FooterLink>
                     </FooterLinkItems>
                 </FooterLinkWrapper>
@@ -66,18 +66,18 @@ const Footer = () => {
                     <FooterLinkItems>
                         <FooterLinkTitle>Videos</FooterLinkTitle>
                         <FooterLink to='/sign-up'>How it works</FooterLink>
-                        <FooterLink to='/'>Testimonials</FooterLink>
-                        <FooterLink to='/'>Careers</FooterLink>
-                        <FooterLink to='/'>Investors</FooterLink>
+                        <FooterLink to='/'>Collections</FooterLink>
+                        <FooterLink to='/'>Artists</FooterLink>
+                        <FooterLink to='/'>Bussiness</FooterLink>
                         <FooterLink to='/'>Terms of Services</FooterLink>
                     </FooterLinkItems>
 
                     <FooterLinkItems>
                         <FooterLinkTitle>Social Media</FooterLinkTitle>
-                        <FooterLink to='/sign-up'>How it works</FooterLink>
-                        <FooterLink to='/'>Testimonials</FooterLink>
-                        <FooterLink to='/'>Careers</FooterLink>
-                        <FooterLink to='/'>Investors</FooterLink>
+                        <FooterLink to='/sign-up'>Facebook</FooterLink>
+                        <FooterLink to='/'>Youtube</FooterLink>
+                        <FooterLink to='/'>Twitter</FooterLink>
+                        <FooterLink to='/'>Instagram</FooterLink>
                         <FooterLink to='/'>Terms of Services</FooterLink>
                     </FooterLinkItems>
                 </FooterLinkWrapper>
@@ -87,7 +87,7 @@ const Footer = () => {
                 <SocialMediaWrap>
                     <SocialMediaLogo to='/'>
                         <SocialMediaIcon />
-                            Ultra
+                            Nu&Yu
                         </SocialMediaLogo>
                     <WebsiteRights>The A team - 2020</WebsiteRights>
                     <SocialMediaIcons>

@@ -182,7 +182,7 @@ const ManageAccount = () => {
     return (
 
         <>
-        You can manage all accounts here
+      
             <Container2>
                 <Button2 btncolor={true} small={true} onClick={addNewAccount}>
                     {page ? 'Add New' : 'Go Back'}

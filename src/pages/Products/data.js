@@ -1,3 +1,7 @@
+import factory from '../../images/factory.svg'
+import mello from '../../images/mello.svg'
+import hunt from '../../images/hunt.svg'
+
 export const homeObjOne = {
     lightBg : false,
     primary: true,
@@ -9,7 +13,7 @@ export const homeObjOne = {
     headline: 'We do things differently',
     lightText: true,
     topLine: 'NuYu Hair & Aesthetics',
-    img: '',
+    img: factory,
     alt: 'WHERE IS MY PIC1111?',
     start: '',
 };
@@ -20,12 +24,12 @@ export const homeObjTwo = {
     imgStart: 'start',
     lightTopLine: false,
     lightTextDesc: false,
-    buttonLabel: 'Get Started',
+    buttonLabel: 'Add to cart',
     description: 'With 30 years of professional experience, we would treat you well' ,
-    headline: 'We do things differently',
+    headline: 'Skin care products',
     lightText: false,
     topLine: 'NuYu Hair & Aesthetics',
-    img: '',
+    img: mello,
     alt: 'WHERE IS MY PIC2?',
     start: 'true',
 };
@@ -36,12 +40,12 @@ export const homeObjThree = {
     imgStart: '',
     lightTopLine: true ,
     lightTextDesc: true,
-    buttonLabel: 'Get Started',
+    buttonLabel: 'Add to cart',
     description: 'With 30 years of professional experience, we would treat you well' ,
-    headline: 'We do things differently',
+    headline: 'Hair caring products',
     lightText: true,
     topLine: 'NuYu Hair & Aesthetics',
-    img: '',
+    img: factory,
     alt: 'WHERE IS MY PIC3?',
     start: '',
 };
@@ -52,12 +56,12 @@ export const homeObjFour = {
     imgStart: 'start',
     lightTopLine: true,
     lightTextDesc: true,
-    buttonLabel: 'Get Started',
+    buttonLabel: 'Add to cart',
     description: 'With 30 years of professional experience, we would treat you well' ,
-    headline: 'We do things differently',
+    headline: 'Nail Polish products',
     lightText: false,
     topLine: 'NuYu Hair & Aesthetics',
-    img: '',
+    img: hunt,
     alt: 'WHERE IS MY PIC4?',
     start: 'true',
 };

@@ -296,7 +296,7 @@ const SetCalender = () => {
 
     return (
         <div>
-            You can set your work calender here!
+          
             <Container2>               
                 <FormWrap>
                     
@@ -313,11 +313,18 @@ const SetCalender = () => {
                                 <FormSelect onChange={e => setMondayStart(e.target.value)} required >
                                     <option value='' disabled selected>Start Time</option>
                                     <option value='9:00:00'>9:00 AM</option>
+                                    <option value='10:00:00'>10:00 AM</option>
+                                    <option value='11:00:00'>11:00 AM</option>
+                                    <option value='12:00:00'>12:00 AM</option>
                                     <option value='13:00:00'>13:00 PM</option>
                                 </FormSelect>
                                 <FormSelect onChange={e => setMondayEnd(e.target.value)} required >
                                     <option value='' disabled selected>End Time</option>
+                                    <option value='12:00:00'>12:00 AM</option>
                                     <option value='13:00:00'>13:00 AM</option>
+                                    <option value='14:00:00'>14:00 AM</option>
+                                    <option value='15:00:00'>15:00 AM</option>
+                                    <option value='16:00:00'>16:00 AM</option>
                                     <option value='17:00:00'>17:00 PM</option>
                                 </FormSelect>
 
@@ -329,11 +336,18 @@ const SetCalender = () => {
                                 <FormSelect onChange={e => setTuesdayStart(e.target.value)} required >
                                     <option value='' disabled selected>Start Time</option>
                                     <option value='9:00:00'>9:00 AM</option>
+                                    <option value='10:00:00'>10:00 AM</option>
+                                    <option value='11:00:00'>11:00 AM</option>
+                                    <option value='12:00:00'>12:00 AM</option>
                                     <option value='13:00:00'>13:00 PM</option>
                                 </FormSelect>
                                 <FormSelect onChange={e => setTuesdayEnd(e.target.value)} required >
                                     <option value='' disabled selected>End Time</option>
-                                    <option value='13:00:00'>13:00 PM</option>
+                                    <option value='12:00:00'>12:00 AM</option>
+                                    <option value='13:00:00'>13:00 AM</option>
+                                    <option value='14:00:00'>14:00 AM</option>
+                                    <option value='15:00:00'>15:00 AM</option>
+                                    <option value='16:00:00'>16:00 AM</option>
                                     <option value='17:00:00'>17:00 PM</option>
                                 </FormSelect>
 
@@ -345,11 +359,18 @@ const SetCalender = () => {
                                 <FormSelect onChange={e => setWednesdayStart(e.target.value)} required >
                                     <option value='' disabled selected>Start Time</option>
                                     <option value='9:00:00'>9:00 AM</option>
+                                    <option value='10:00:00'>10:00 AM</option>
+                                    <option value='11:00:00'>11:00 AM</option>
+                                    <option value='12:00:00'>12:00 AM</option>
                                     <option value='13:00:00'>13:00 PM</option>
                                 </FormSelect>
                                 <FormSelect onChange={e => setWednesdayEnd(e.target.value)} required >
                                     <option value='' disabled selected>End Time</option>
-                                    <option value='13:00:00'>13:00 PM</option>
+                                    <option value='12:00:00'>12:00 AM</option>
+                                    <option value='13:00:00'>13:00 AM</option>
+                                    <option value='14:00:00'>14:00 AM</option>
+                                    <option value='15:00:00'>15:00 AM</option>
+                                    <option value='16:00:00'>16:00 AM</option>
                                     <option value='17:00:00'>17:00 PM</option>
                                 </FormSelect>
 
@@ -361,11 +382,18 @@ const SetCalender = () => {
                                 <FormSelect onChange={e => setThursdayStart(e.target.value)} required >
                                     <option value='' disabled selected>Start Time</option>
                                     <option value='9:00:00'>9:00 AM</option>
+                                    <option value='10:00:00'>10:00 AM</option>
+                                    <option value='11:00:00'>11:00 AM</option>
+                                    <option value='12:00:00'>12:00 AM</option>
                                     <option value='13:00:00'>13:00 PM</option>
                                 </FormSelect>
                                 <FormSelect onChange={e => setThursdayEnd(e.target.value)} required >
                                     <option value='' disabled selected>End Time</option>
-                                    <option value='13:00:00'>13:00 PM</option>
+                                    <option value='12:00:00'>12:00 AM</option>
+                                    <option value='13:00:00'>13:00 AM</option>
+                                    <option value='14:00:00'>14:00 AM</option>
+                                    <option value='15:00:00'>15:00 AM</option>
+                                    <option value='16:00:00'>16:00 AM</option>
                                     <option value='17:00:00'>17:00 PM</option>
                                 </FormSelect>
 
@@ -377,11 +405,18 @@ const SetCalender = () => {
                                 <FormSelect onChange={e => setFridayStart(e.target.value)} required >
                                     <option value='' disabled selected>Start Time</option>
                                     <option value='9:00:00'>9:00 AM</option>
+                                    <option value='10:00:00'>10:00 AM</option>
+                                    <option value='11:00:00'>11:00 AM</option>
+                                    <option value='12:00:00'>12:00 AM</option>
                                     <option value='13:00:00'>13:00 PM</option>
                                 </FormSelect>
                                 <FormSelect onChange={e => setFridayEnd(e.target.value)} required >
                                     <option value='' disabled selected>End Time</option>
-                                    <option value='13:00:00'>13:00 PM</option>
+                                    <option value='12:00:00'>12:00 AM</option>
+                                    <option value='13:00:00'>13:00 AM</option>
+                                    <option value='14:00:00'>14:00 AM</option>
+                                    <option value='15:00:00'>15:00 AM</option>
+                                    <option value='16:00:00'>16:00 AM</option>
                                     <option value='17:00:00'>17:00 PM</option>
                                 </FormSelect>
 
@@ -393,11 +428,18 @@ const SetCalender = () => {
                                 <FormSelect onChange={e => setSaturdayStart(e.target.value)} required >
                                     <option value='' disabled selected>Start Time</option>
                                     <option value='9:00:00'>9:00 AM</option>
+                                    <option value='10:00:00'>10:00 AM</option>
+                                    <option value='11:00:00'>11:00 AM</option>
+                                    <option value='12:00:00'>12:00 AM</option>
                                     <option value='13:00:00'>13:00 PM</option>
                                 </FormSelect>
                                 <FormSelect onChange={e => setSaturdayEnd(e.target.value)} required >
                                     <option value='' disabled selected>End Time</option>
-                                    <option value='13:00:00'>13:00 PM</option>
+                                    <option value='12:00:00'>12:00 AM</option>
+                                    <option value='13:00:00'>13:00 AM</option>
+                                    <option value='14:00:00'>14:00 AM</option>
+                                    <option value='15:00:00'>15:00 AM</option>
+                                    <option value='16:00:00'>16:00 AM</option>
                                     <option value='17:00:00'>17:00 PM</option>
                                 </FormSelect>
 

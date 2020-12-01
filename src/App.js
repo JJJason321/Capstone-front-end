@@ -22,21 +22,12 @@ function App() {
     const loginStatus = localStorage.getItem('login');
     const currentuser = localStorage.getItem('user');
     const userId = localStorage.getItem('userId');
-    /*
-    console.log("heree")
-    console.log("2nd useEffect called")
-    */
+  
     if (loginStatus) {
-      /*
-      console.log("success!!!")
-      console.log(loginStatus)
-      console.log(currentuser)
-      console.log("heree")
-      console.log(userId);
-      */
+     
       setLogin(true);
     } else {
-      //console.log(loginStatus);
+      
     }
   })
 

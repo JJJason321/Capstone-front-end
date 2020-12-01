@@ -1,3 +1,7 @@
+import makeup from '../../images/makeup.svg';
+import artist from '../../images/artist.svg';
+import keyPoint from '../../images/keyPoint.svg';
+
 
 
 export const homeObjOne = {
@@ -8,7 +12,7 @@ export const homeObjOne = {
     lightTextDesc: true,
     buttonLabel: 'Get Started',
     description: 'With 30 years of professional experience, we would treat you well' ,
-    headline: 'We do things differently',
+    headline: 'Hair Color, Nail Polish',
     lightText: true,
     topLine: 'NuYu Hair & Aesthetics',
     img: '',
@@ -24,10 +28,10 @@ export const homeObjTwo = {
     lightTextDesc: false,
     buttonLabel: 'Get Started',
     description: 'With 30 years of professional experience, we would treat you well' ,
-    headline: 'We do things differently',
+    headline: 'Hair Design, Coloring',
     lightText: false,
     topLine: 'NuYu Hair & Aesthetics',
-    img: '',
+    img: artist,
     alt: 'WHERE IS MY PIC2?',
     start: 'true',
 };
@@ -40,10 +44,10 @@ export const homeObjThree = {
     lightTextDesc: true,
     buttonLabel: 'Get Started',
     description: 'With 30 years of professional experience, we would treat you well' ,
-    headline: 'We do things differently',
+    headline: 'Wedding Makeup',
     lightText: true,
     topLine: 'NuYu Hair & Aesthetics',
-    img: '',
+    img: makeup,
     alt: 'WHERE IS MY PIC3?',
     start: '',
 };
@@ -56,10 +60,10 @@ export const homeObjFour = {
     lightTextDesc: true,
     buttonLabel: 'Get Started',
     description: 'With 30 years of professional experience, we would treat you well' ,
-    headline: 'We do things differently',
+    headline: 'Body Skin Care',
     lightText: false,
     topLine: 'NuYu Hair & Aesthetics',
-    img: '',
+    img: keyPoint,
     alt: 'WHERE IS MY PIC4?',
     start: 'true',
 };
